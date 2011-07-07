@@ -5,20 +5,20 @@
 
 === How to install
 
-====Clone this repo
+Clone this repo
 
 ----
 git clone git://github.com/irtigor/irtvim.git ~/.irtvim
 ----
 
-====Init and update submodules
+Init and update submodules
 
 ----
 git submodule init
 git submodule update
 ----
 
-====Link
+Link
 
 ----
 ln -s ~/.irtvim/vimrc ~/.vimrc
