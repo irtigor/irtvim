@@ -95,6 +95,9 @@ map <leader>7 7gt
 map <leader>8 8gt
 map <leader>9 9gt
 
+" supertab completation
+let g:SuperTabDefaultCompletionType = "context"
+
 " Substitutions
 "---------------------------------
 if &term !=# "linux"
