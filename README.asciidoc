@@ -1,0 +1,42 @@
+:Author:    Igor Ramos Tiburcio
+:Revision:  0.1
+
+== Simple vim config
+
+=== How to install
+
+Clone this repo
+
+----
+git clone git://github.com/irtigor/irtvim.git ~/.irtvim
+----
+
+Init and update submodules
+
+----
+git submodule init
+git submodule update
+----
+
+Link
+
+----
+ln -s ~/.irtvim/vimrc ~/.vimrc
+ln -s ~/.irtvim/vim ~/.vim
+----
+
+=== How to update
+
+----
+cd ~/.irtvim
+git pull
+git submodule update
+----
+
+=== How to uninstall
+
+----
+unlink ~/.vim
+unlink ~/.vimrc
+rm -rf ~/.irtvim
+----
