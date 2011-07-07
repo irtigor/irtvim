@@ -25,7 +25,7 @@ set wildmode=longest:full         " sets wildmode, also invokes wildmenu (if ena
 set shortmess+=I                  " I - don't give the intro message when starting Vim.
 set laststatus=2                  " always show status line
 
-"set statusline=%f%h%m%r%w\ %y\ [%{&ff}]\ [%{&fenc}]\ %{fugitive#statusline()}\ %=\ %c,%l/%L\ %P
+set statusline=%f%h%m%r%w\ %y\ [%{&ff}]\ [%{&fenc}]\ %{fugitive#statusline()}\ %=\ %c,%l/%L\ %P
                             " statusline format
 
 filetype off                " Disabling before Pathogen. Loaded later.
