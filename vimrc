@@ -28,8 +28,8 @@ set laststatus=2                  " always show status line
 "set statusline=%f%h%m%r%w\ %y\ [%{&ff}]\ [%{&fenc}]\ %{fugitive#statusline()}\ %=\ %c,%l/%L\ %P
                             " statusline format
 
-"filetype off                " Disabling before Pathogen. Loaded later.
-"call pathogen#runtime_append_all_bundles()
+filetype off                " Disabling before Pathogen. Loaded later.
+call pathogen#runtime_append_all_bundles()
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
@@ -66,7 +66,7 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-"filetype plugin indent on
+filetype plugin indent on
 
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
