@@ -28,8 +28,7 @@ set laststatus=2                  " always show status line
 "set statusline=%f%h%m%r%w\ %y\ [%{&ff}]\ [%{&fenc}]\ %{fugitive#statusline()}\ %=\ %c,%l/%L\ %P
                             " statusline format
 
-filetype off                           " Disabling before Pathogen. Loaded later.
-source ~/.irtvim/autoload/pathogen.vim  " odd
+filetype off                " Disabling before Pathogen. Loaded later.
 call pathogen#runtime_append_all_bundles()
 
 " Only do this part when compiled with support for autocommands
