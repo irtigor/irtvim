@@ -7,31 +7,31 @@
 
 .Clone this repo
 
-[source,shell]
+//[source,shell]
 git clone git://github.com/irtigor/irtvim.git ~/.irtvim
 
 .Init and update submodules
 
-[source,shell]
+//[source,shell]
 git submodule init
 git submodule update
 
 .Link
 
-[source,shell]
+//[source,shell]
 ln -s ~/.irtvim/vimrc ~/.vimrc
 ln -s ~/.irtvim/vim ~/.vim
 
 === How to update
 
-[source,shell]
+//[source,shell]
 cd ~/.irtvim
 git pull
 git submodule update
 
 === How to uninstall
 
-[source,shell]
+//[source,shell]
 unlink ~/.vim
 unlink ~/.vimrc
 rm -rf ~/.irtvim
