@@ -98,6 +98,9 @@ map <leader>9 9gt
 " nerdtree
 map <F3> :NERDTreeToggle \| :silent NERDTreeMirror<CR>
 
+" CommandT
+nnoremap <leader>t :CommandT<CR>
+
 " supertab completation
 let g:SuperTabDefaultCompletionType = "context"
 
