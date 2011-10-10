@@ -29,8 +29,11 @@ ln -s ~/.irtvim/vim ~/.vim
 
 ----
 cd ~/.irtvim
+git checkout master
 git pull
-git submodule update
+git submodule foreach git checkout master
+git submodule foreach git pull
+git commit -a -m "updated irtvim and plugin"
 ----
 
 === How to uninstall
