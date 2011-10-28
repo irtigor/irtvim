@@ -80,6 +80,11 @@ map <F3> :NERDTreeToggle \| :silent NERDTreeMirror<CR>
 " CommandT
 nnoremap <leader>o :CommandT<CR>
 
+" Save file as root and reload it (loses hist)
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command Wq :execute ':W' | :q
+command WQ :Wq
+
 " supertab completation
 let g:SuperTabDefaultCompletionType = "context"
 
