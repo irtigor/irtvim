@@ -97,8 +97,6 @@ if has("autocmd")
     \ if line("'\"") > 0 && line ("'\"") <= line("$") |
     \   exe "normal! g'\"" |
     \ endif
-    " don't write swapfile on most commonly used directories for NFS mounts or USB sticks
-    autocmd BufNewFile,BufReadPre /media/*,/mnt/* set directory=~/tmp,/var/tmp,/tmp
     " Switch to working directory of the open file
     autocmd BufEnter * lcd %:p:h
   augroup END
