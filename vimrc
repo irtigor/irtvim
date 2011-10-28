@@ -59,6 +59,7 @@ vmap <leader>c "+y
 " Remove highlighting search results
 nnoremap <leader><space> :noh <CR>
 
+"key mapping for tab navigation
 map <leader>t <Esc>:tabnew<CR>
 map <leader>w <Esc>:tabclose<CR>
 map <leader>1 1gt
@@ -69,7 +70,9 @@ map <leader>5 5gt
 map <leader>6 6gt
 map <leader>7 7gt
 map <leader>8 8gt
-map <leader>9 gT
+map <leader>9 9gt
+nmap <Tab> gt
+nmap <S-Tab> gT
 
 " nerdtree
 map <F3> :NERDTreeToggle \| :silent NERDTreeMirror<CR>
