@@ -89,6 +89,18 @@ if &term !=# "linux"
     set list listchars=tab:\»\ ,trail:·,extends:›,precedes:‹
 endif
 
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
   augroup linux
@@ -102,6 +114,8 @@ if has("autocmd")
     \ endif
     " Switch to working directory of the open file
     autocmd BufEnter * lcd %:p:h
+    " Strip trailing whitespace
+    autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
   augroup END
 
   " Enable formatting based on file types
